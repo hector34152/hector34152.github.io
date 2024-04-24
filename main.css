@@ -33,105 +33,12 @@ h1{
     color: gray;
     text-align: right;
 }
-@media (min-width: 1024px){ 
+@media (min-width: 394px){ 
     #barraLateral{
         font-family: monospace;
         position: fixed;
         background-color: black;
-        width: 30%;
-        height: 100%;
-    }
-    #barraLateral a:hover{
-        color: gray;
-    }
-    .perfil{
-        width: 150px;
-        height: 200px;
-        border-radius: 50%;
-        background: var(--i);
-        background-size: cover;
-        box-shadow: 3px 5px 5px rgb(0, 0, 0, .8);
-    }
-    .reversoP{
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        background: rgb(0, 0, 0, .4);
-        opacity: 0;
-        transition: .5s;
-    }
-    .reversoP a:hover{
-        color: red;
-    }
-    .perfil:hover .reversoP{
-        color: rgb(255, 255, 255, .8);
-        opacity: 1;
-    }
-    #personal{
-        margin: 0;
-        display: table;
-    }
-    #personal h2 {
-        position: relative;
-        float: left;
-        color: rgb(88, 13, 13);
-        background: whitesmoke;
-    }
-    #personal h2 span{
-        position:absolute;
-        right:0;
-        width:0;
-        background: whitesmoke;
-        border-left: 1px solid #000;
-        animation: escribir 5s steps(30) infinite alternate;
-    }
-    #informacion{
-        display: block;
-        margin-left: 35%;
-    }
-    .certificados{
-        align-items: center;
-        justify-content: center;
-        min-height: 100vh;
-        background: whitesmoke;
-    }
-    .card{
-        margin: 20px;
-        width: 450px;
-        height: 300px;
-        border-radius: 5px;
-        background: var(--i);
-        background-size: cover;
-        box-shadow: 3px 5px 5px rgb(0, 0, 0, .8);
-    }
-    .reverso{
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        background: rgb(0, 0, 0, .4);
-        opacity: 0;
-        transition: .5s;
-    }
-    .reverso a:hover{
-        color: red;
-    }
-    .card:hover .reverso{
-        color: rgb(255, 255, 255, .8);
-        opacity: 1;
-    }
-}
-@media (min-width: 394px) and (max-width: 1023px){ 
-    #barraLateral{
-        font-family: monospace;
-        position: fixed;
-        background-color: black;
-        width: 30%;
+        width: 216px;
         height: 100%;
     }
     #boton{
@@ -186,7 +93,8 @@ h1{
     }
     #informacion{
         display: block;
-        margin-left: 35%;
+        margin-left: 216px;
+        width: 100%;
     }
     .certificados{
         align-items: center;
