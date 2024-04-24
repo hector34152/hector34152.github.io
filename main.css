@@ -33,7 +33,7 @@ h1{
     color: gray;
     text-align: right;
 }
-@media (min-width: 394px){ 
+@media (min-width: 751px){ 
     #barraLateral{
         font-family: monospace;
         position: fixed;
@@ -130,7 +130,7 @@ h1{
         opacity: 1;
     }
 }
-@media (max-width: 393px){
+@media (max-width: 750px){
     #menu{
         visibility: hidden;
     }
