@@ -1,0 +1,325 @@
+body{
+    font-family: Tahoma;
+    margin-left: 5%;
+    margin-top: 0;
+    display: flex;
+    background-color: whitesmoke;
+    height: 100%;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+h1{
+    padding-left: 15px;
+    color: whitesmoke;
+    background-color: black;
+}
+.puesto{
+    color: rgb(88, 13, 13);
+    font-weight: 800;
+}
+.fecha{
+    color: gray;
+    font-style: italic;
+}
+.academico{
+    color: rgb(88, 13, 13); 
+}
+.academico h6{
+    color: gray;
+    text-align: right;
+}
+@media (min-width: 1024px){ 
+    #barraLateral{
+        font-family: monospace;
+        position: fixed;
+        background-color: black;
+        width: 30%;
+        height: 100%;
+    }
+    #barraLateral a:hover{
+        color: gray;
+    }
+    .perfil{
+        width: 150px;
+        height: 200px;
+        border-radius: 50%;
+        background: var(--i);
+        background-size: cover;
+        box-shadow: 3px 5px 5px rgb(0, 0, 0, .8);
+    }
+    .reversoP{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: rgb(0, 0, 0, .4);
+        opacity: 0;
+        transition: .5s;
+    }
+    .reversoP a:hover{
+        color: red;
+    }
+    .perfil:hover .reversoP{
+        color: rgb(255, 255, 255, .8);
+        opacity: 1;
+    }
+    #personal{
+        margin: 0;
+        display: table;
+    }
+    #personal h2 {
+        position: relative;
+        float: left;
+        color: rgb(88, 13, 13);
+        background: whitesmoke;
+    }
+    #personal h2 span{
+        position:absolute;
+        right:0;
+        width:0;
+        background: whitesmoke;
+        border-left: 1px solid #000;
+        animation: escribir 5s steps(30) infinite alternate;
+    }
+    #informacion{
+        display: block;
+        margin-left: 35%;
+    }
+    .certificados{
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        background: whitesmoke;
+    }
+    .card{
+        margin: 20px;
+        width: 450px;
+        height: 300px;
+        border-radius: 5px;
+        background: var(--i);
+        background-size: cover;
+        box-shadow: 3px 5px 5px rgb(0, 0, 0, .8);
+    }
+    .reverso{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: rgb(0, 0, 0, .4);
+        opacity: 0;
+        transition: .5s;
+    }
+    .reverso a:hover{
+        color: red;
+    }
+    .card:hover .reverso{
+        color: rgb(255, 255, 255, .8);
+        opacity: 1;
+    }
+}
+@media (min-width: 394px) and (max-width: 1023px){ 
+    #barraLateral{
+        font-family: monospace;
+        position: fixed;
+        background-color: black;
+        width: 30%;
+        height: 100%;
+    }
+    #boton{
+        display: none;
+    }
+    #barraLateral a:hover{
+        color: gray;
+    }
+    .perfil{
+        width: 150px;
+        height: 200px;
+        border-radius: 50%;
+        background: var(--i);
+        background-size: cover;
+        box-shadow: 3px 5px 5px rgb(0, 0, 0, .8);
+    }
+    .reversoP{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: rgb(0, 0, 0, .4);
+        opacity: 0;
+        transition: .5s;
+    }
+    .reversoP a:hover{
+        color: red;
+    }
+    .perfil:hover .reversoP{
+        color: rgb(255, 255, 255, .8);
+        opacity: 1;
+    }
+    #personal{
+        margin: 0;
+        display: table;
+    }
+    #personal h2 {
+        position: relative;
+        float: left;
+        color: rgb(88, 13, 13);
+        background: whitesmoke;
+    }
+    #personal h2 span{
+        position:absolute;
+        right:0;
+        width:0;
+        background: whitesmoke;
+        border-left: 1px solid #000;
+        animation: escribir 5s steps(30) infinite alternate;
+    }
+    #informacion{
+        display: block;
+        margin-left: 35%;
+    }
+    .certificados{
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        background: whitesmoke;
+    }
+    .card{
+        margin: 20px;
+        width: 450px;
+        height: 300px;
+        border-radius: 5px;
+        background: var(--i);
+        background-size: cover;
+        box-shadow: 3px 5px 5px rgb(0, 0, 0, .8);
+    }
+    .reverso{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: rgb(0, 0, 0, .4);
+        opacity: 0;
+        transition: .5s;
+    }
+    .reverso a:hover{
+        color: red;
+    }
+    .card:hover .reverso{
+        color: rgb(255, 255, 255, .8);
+        opacity: 1;
+    }
+}
+@media (max-width: 393px){
+    #menu{
+        visibility: hidden;
+    }
+    #barraLateral{
+        font-family: monospace;
+        position: fixed;
+        background-color: black;
+        width: 32px;
+        padding-top: 5%;
+        height: 100%;
+    }
+    #boton{
+        border: 0;
+        background: transparent;
+    }
+    #barraLateral a:hover{
+        color: gray;
+    }
+    #informacion{
+        width: 90%;
+        margin-left: 8.5%;
+    }
+    .perfil{
+        width: 150px;
+        height: 200px;
+        border-radius: 50%;
+        background: var(--i);
+        background-size: cover;
+        box-shadow: 3px 5px 5px rgb(0, 0, 0, .8);
+    }
+    .reversoP{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: rgb(0, 0, 0, .4);
+        opacity: 0;
+        transition: .5s;
+    }
+    .reversoP a:hover{
+        color: red;
+    }
+    .perfil:hover .reversoP{
+        color: rgb(255, 255, 255, .8);
+        opacity: 1;
+    }
+    #personal h2 {
+        position: relative;
+        color: rgb(88, 13, 13);
+        background: whitesmoke;
+    }
+    #personal h2 span{
+        position:absolute;
+        right:0;
+        width:0;
+        overflow: hidden;
+        white-space: nowrap;
+        background: whitesmoke;
+        border-left: 1px solid black;
+        animation: escribir 5s steps(30) infinite alternate;
+    }
+    .certificados{
+        align-items: center;
+        justify-content: center;
+        background: whitesmoke;
+    }
+    .card{
+        margin: 2%;
+        width: 100%;
+        height: 250px;
+        border-radius: 5px;
+        background: var(--i);
+        background-size: cover;
+        box-shadow: 3px 5px 5px rgb(0, 0, 0, .8);
+    }
+    .reverso{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: rgb(0, 0, 0, .7);
+        opacity: 0;
+        transition: .5s;
+    }
+    .reverso a:hover{
+        color: red;
+    }
+    .card:hover .reverso{
+        color: rgb(255, 255, 255, .8);
+        opacity: 1;
+    }
+} 
+@keyframes escribir {
+    from {width: 0;}
+    to {width: 100%;}
+  }
