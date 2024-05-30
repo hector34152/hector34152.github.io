@@ -1,233 +1,190 @@
+html{
+    height: 100%;
+}
 body{
-    font-family: Tahoma;
-    margin-left: 5%;
-    margin-top: 0;
-    display: flex;
-    background-color: whitesmoke;
+    font-family: monospace;
     height: 100%;
 }
 ul{
+    padding: 0;
     list-style: none;
 }
+nav{
+    background: linear-gradient(180deg,rgb(21, 67, 96),gray,lightblue);
+    position: fixed;
+    padding: 0 2.5% 0 2.5%;
+    top: 0;
+    left: 4%;
+    display: grid;
+    align-content: center;
+    text-align: center;
+    grid-gap: 20px;
+    width: 20%;
+    max-width: 200px;
+    height: 100%;
+}
+nav a img{
+    display: none;
+}
+#menu{
+    display: none;
+    width: 20px;
+}
+.perfil{
+    width: 100%;
+    height: 200px;
+    background-image: url("img/perfil.jpeg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 100%;
+    filter: grayscale(30%);
+}
 a{
+    display: inline-block;
     text-decoration: none;
+    position: relative;
+    overflow: hidden;
     color: white;
+    font-size: large;
 }
-h1{
-    padding-left: 15px;
-    color: whitesmoke;
-    background-color: black;
+a:after {
+    content: "";
+    display: block;
+    margin: auto;
+    width: 0px;
+    height: 2px;
+    transition: all .5s;
 }
-.puesto{
-    color: rgb(88, 13, 13);
-    font-weight: 800;
+a:hover:after {
+    width: 100%;
+    background: white;
 }
-.fecha{
-    color: gray;
-    font-style: italic;
+main{
+    display: grid;
+    align-items: center;
+    height: 100%;
+    margin: 0 0 0 30%;
+    font-family: 'Times New Roman', Times, serif;
 }
-.academico{
-    color: rgb(88, 13, 13); 
+#personal{
+    display: grid;
 }
-.academico h6{
-    color: gray;
-    text-align: right;
+#personal #name{
+    position: relative;
+    float: left;
+    background: linear-gradient(270deg,rgb( 21,67,96),lightblue);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
-@media (min-width: 751px){ 
-    #barraLateral{
-        font-family: monospace;
-        position: fixed;
-        background-color: black;
-        width: 216px;
+#personal #name span{
+    position: absolute;
+    right: 0;
+    width: 0;
+    background-color: white;
+    border-left: 1px solid #000;
+    animation: escribir 5s steps(30) infinite alternate;
+}
+#social{
+    display: flex;
+    justify-items: center;
+    gap: 2rem;
+}
+#social a{
+    text-align: center;
+    width: 100%;
+    scale: 0.5;
+    height: auto;
+}
+#social a:hover{
+    scale: 1;
+}
+.certificados{
+    display: grid;
+    text-align: center;
+    gap: 10px;
+    width: 100%;
+    height: 100%;
+}
+.card{
+    background: var(--i);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 5px;
+    box-shadow: 5px 10px 5px rgba(112,110,110, 0.8);
+    filter: brightness(1.1);
+    width: 90%;
+    height: 300px;
+    mix-blend-mode: multiply;
+}
+.reverso{
+    display: grid;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.6);
+    transition: .5s;
+}
+.card:hover .reverso{
+    color: red;
+    opacity: 1;
+}
+@media only screen and (max-width: 600px) {
+    nav{
+        display: grid;
+        padding: 10px 0 0 0;
+        justify-items: center;
+        align-content: center;
+        text-align: center;
+        background: linear-gradient(180deg,rgb(21, 67, 96),gray,lightblue);
+        top: 0;
+        left: 2%;
+        width: 10%;
         height: 100%;
     }
-    #boton{
+    nav a p{
         display: none;
     }
-    #barraLateral a:hover{
-        color: gray;
+    nav a img{
+        display: grid;
+        margin: auto;
+        width: 50%;
+        filter: invert(100%);
     }
     .perfil{
-        width: 150px;
-        height: 200px;
-        border-radius: 50%;
-        background: var(--i);
-        background-size: cover;
-        box-shadow: 3px 5px 5px rgb(0, 0, 0, .8);
+        width: 80%;
+        margin: 20px 10% 0 10%;
+        height: 50px;
     }
-    .reversoP{
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        background: rgb(0, 0, 0, .4);
-        opacity: 0;
-        transition: .5s;
-    }
-    .reversoP a:hover{
-        color: red;
-    }
-    .perfil:hover .reversoP{
-        color: rgb(255, 255, 255, .8);
-        opacity: 1;
-    }
-    #personal{
-        margin: 0;
-        display: table;
-    }
-    #personal h2 {
-        position: relative;
-        float: left;
-        color: rgb(88, 13, 13);
-        background: whitesmoke;
-    }
-    #personal h2 span{
-        position:absolute;
-        right:0;
-        width:0;
-        background: whitesmoke;
-        border-left: 1px solid #000;
-        animation: escribir 5s steps(30) infinite alternate;
-    }
-    #informacion{
-        display: block;
-        margin-left: 216px;
-        width: 100%;
-    }
-    .certificados{
-        align-items: center;
-        justify-content: center;
-        min-height: 100vh;
-        background: whitesmoke;
-    }
-    .card{
-        margin: 20px;
-        width: 450px;
-        height: 300px;
-        border-radius: 5px;
-        background: var(--i);
-        background-size: cover;
-        box-shadow: 3px 5px 5px rgb(0, 0, 0, .8);
-    }
-    .reverso{
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        background: rgb(0, 0, 0, .4);
-        opacity: 0;
-        transition: .5s;
-    }
-    .reverso a:hover{
-        color: red;
-    }
-    .card:hover .reverso{
-        color: rgb(255, 255, 255, .8);
-        opacity: 1;
-    }
-}
-@media (max-width: 750px){
-    #menu{
+    #flag{
         visibility: hidden;
     }
-    #barraLateral{
-        font-family: monospace;
-        position: fixed;
-        background-color: black;
-        width: 32px;
-        padding-top: 5%;
-        height: 100%;
+    #menu{
+        display: contents;
+        
     }
-    #boton{
-        border: 0;
-        background: transparent;
-    }
-    #barraLateral a:hover{
-        color: gray;
-    }
-    #informacion{
-        width: 90%;
-        margin-left: 8.5%;
-    }
-    .perfil{
-        width: 150px;
-        height: 200px;
-        border-radius: 50%;
-        background: var(--i);
-        background-size: cover;
-        box-shadow: 3px 5px 5px rgb(0, 0, 0, .8);
-    }
-    .reversoP{
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
+    main{
+        display: grid;
         align-items: center;
-        justify-content: center;
-        background: rgb(0, 0, 0, .4);
-        opacity: 0;
-        transition: .5s;
-    }
-    .reversoP a:hover{
-        color: red;
-    }
-    .perfil:hover .reversoP{
-        color: rgb(255, 255, 255, .8);
-        opacity: 1;
-    }
-    #personal h2 {
-        position: relative;
-        color: rgb(88, 13, 13);
-        background: whitesmoke;
-    }
-    #personal h2 span{
-        position:absolute;
-        right:0;
-        width:0;
-        overflow: hidden;
-        white-space: nowrap;
-        background: whitesmoke;
-        border-left: 1px solid black;
-        animation: escribir 5s steps(30) infinite alternate;
-    }
-    .certificados{
-        align-items: center;
-        justify-content: center;
-        background: whitesmoke;
-    }
-    .card{
-        margin: 2%;
-        width: 100%;
-        height: 250px;
-        border-radius: 5px;
-        background: var(--i);
-        background-size: cover;
-        box-shadow: 3px 5px 5px rgb(0, 0, 0, .8);
-    }
-    .reverso{
-        width: 100%;
         height: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        background: rgb(0, 0, 0, .7);
-        opacity: 0;
-        transition: .5s;
+        margin: 0 0 0 15%;
+        font-family: 'Times New Roman', Times, serif;
     }
-    .reverso a:hover{
-        color: red;
-    }
-    .card:hover .reverso{
-        color: rgb(255, 255, 255, .8);
-        opacity: 1;
-    }
-} 
+}
 @keyframes escribir {
-    from {width: 0;}
-    to {width: 100%;}
-  }
+    from {width:0;}
+    to {width:100%;}
+}
+@keyframes slide {
+    50%{
+        left: 10%;
+        top: -40%;
+    }
+    100%{
+        left: -15%;
+        top: -15%;
+    }
+}
