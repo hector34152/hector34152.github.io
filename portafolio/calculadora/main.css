@@ -1,0 +1,53 @@
+body{
+    background-color: lightgrey;
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+button{
+    border: none;
+    border-radius: 10px;
+    background-color: lightgray;
+}
+#calculadora{
+    background-color: whitesmoke;
+    padding: 2%;
+    border-radius: 10px;
+    width: 50%;
+    max-width: 300PX;
+    height: 45%;
+    min-height: 240PX;
+    position: fixed;
+    top: 25%;
+    left: 25%;
+    border-style: groove;
+}
+.pantalla {
+    width: 95%;
+    margin: 5px;
+    border: 0;
+    color: gray;
+    background-color: lightblue;
+}
+#pantalla{
+    font-size: x-large;
+    text-align: end;
+    color: black;
+}
+#calculadora button{
+    width: 23.5%;
+    height: 16%;
+    margin: 1.5px;
+}
+#CE {
+    background-color: brown;
+    color: white;
+}
+#res{
+    background-color: rgb(23, 23, 133);
+    color: white;
+}
+.opera{
+    background-color: gray;
+    color: white;
+}
