@@ -40,6 +40,9 @@ button{
     width: 100%;
     height: 90%;
 }
+#botones button:hover{
+    border: solid black;
+}
 #botones button{
     width: 25%;
     height: 20%;
