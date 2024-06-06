@@ -14,9 +14,7 @@ button{
     padding: 2%;
     border-radius: 10px;
     width: 50%;
-    max-width: 300PX;
-    height: 45%;
-    min-height: 240PX;
+    height: auto;
     position: fixed;
     top: 25%;
     left: 25%;
@@ -35,7 +33,7 @@ button{
     color: black;
 }
 #calculadora button{
-    width: 23.5%;
+    width: 22%;
     height: 16%;
     margin: 1.5px;
 }
