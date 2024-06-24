@@ -2,34 +2,36 @@ var valor;
 var signo = "";
 
 function crear(){
-    let etiquetas = ["7","8","9","/","4","5","6","x","1","2","3","-","0","=","CE","+",];
+    let etiquetas = ["7","8","9","/","4","5","6","x","1","2","3","-","0","=","CE","+"];
     var calculadora = document.getElementById("calculadora"); 
     valor = 0.0;
     signo = "";
     calculadora.innerHTML = "<input type='text' class = 'pantalla' id='pantallaDos'><br>";
     calculadora.innerHTML += "<input type='text' class = 'pantalla'id='pantalla'><br>";
+    calculadora.innerHTML += "<div id='botones'></div>";
+    var botones = document.getElementById("botones");
 
     for(let i=0;i<etiquetas.length;i++){
         if(etiquetas[i]=="+"){
-            calculadora.innerHTML += "<button type = 'button' class = 'opera' onclick = 'almacena(1);' id = '"+etiquetas[i]+"'>"+etiquetas[i]+"</button>";
+            botones.innerHTML += "<button type = 'button' class = 'opera' onclick = 'almacena(1);' id = '"+etiquetas[i]+"'>"+etiquetas[i]+"</button>";
         }
         else if(etiquetas[i]=="-"){
-            calculadora.innerHTML += "<button type = 'button' class = 'opera' onclick = 'almacena(2);' id = '"+etiquetas[i]+"'>"+etiquetas[i]+"</button>";
+            botones.innerHTML += "<button type = 'button' class = 'opera' onclick = 'almacena(2);' id = '"+etiquetas[i]+"'>"+etiquetas[i]+"</button>";
         }
         else if(etiquetas[i]=="/"){
-            calculadora.innerHTML += "<button type = 'button' class = 'opera' onclick = 'almacena(3);' id = '"+etiquetas[i]+"'>"+etiquetas[i]+"</button>";
+            botones.innerHTML += "<button type = 'button' class = 'opera' onclick = 'almacena(3);' id = '"+etiquetas[i]+"'>"+etiquetas[i]+"</button>";
         }
         else if(etiquetas[i]=="x"){
-            calculadora.innerHTML += "<button type = 'button' class = 'opera' onclick = 'almacena(4);' id = '"+etiquetas[i]+"'>"+etiquetas[i]+"</button>";
+            botones.innerHTML += "<button type = 'button' class = 'opera' onclick = 'almacena(4);' id = '"+etiquetas[i]+"'>"+etiquetas[i]+"</button>";
         }
         else if(etiquetas[i]=='CE'){
-            calculadora.innerHTML += "<button type = 'button' onclick = 'borrar();' id = '"+etiquetas[i]+"'>"+etiquetas[i]+"</button>";
+            botones.innerHTML += "<button type = 'button' onclick = 'borrar();' id = '"+etiquetas[i]+"'>"+etiquetas[i]+"</button>";
         }
         else if(etiquetas[i]=='='){
-            calculadora.innerHTML += "<button type = 'button' onclick = 'resultado();' id = 'res'>"+etiquetas[i]+"</button>";
+            botones.innerHTML += "<button type = 'button' onclick = 'resultado();' id = 'res'>"+etiquetas[i]+"</button>";
         }
         else{
-            calculadora.innerHTML += "<button type = 'button' onclick = 'mostrar("+etiquetas[i]+");' id = '"+etiquetas[i]+"'>"+etiquetas[i]+"</button>";
+            botones.innerHTML += "<button type = 'button' onclick = 'mostrar("+etiquetas[i]+");' id = '"+etiquetas[i]+"'>"+etiquetas[i]+"</button>";
 
         }
     }
