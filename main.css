@@ -1,3 +1,7 @@
+.bebas {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+}  
 html{
     height: 100%;
 }
@@ -10,7 +14,7 @@ ul{
     list-style: none;
 }
 nav{
-    background: linear-gradient(180deg,rgb(21, 67, 96),gray,lightblue);
+    background: linear-gradient(180deg,#141e30, #ef473a);
     position: fixed;
     padding: 0 2.5% 0 2.5%;
     top: 0;
@@ -38,6 +42,7 @@ nav a img{
     background-position: center;
     border-radius: 100%;
     cursor: pointer;
+    filter: grayscale(0.4);
 }
 .perfil:hover{
     filter: grayscale(.8);
@@ -80,10 +85,14 @@ main{
 #personal{
     display: grid;
 }
+#personal h1{
+    display: grid;
+    font-family: Bebas Neue;
+}
 #personal #name{
     position: relative;
     float: left;
-    background: linear-gradient(270deg,rgb( 21,67,96),lightblue);
+    background: linear-gradient(270deg,#141e30, #ef473a);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -157,7 +166,7 @@ main{
         justify-items: center;
         align-content: center;
         text-align: center;
-        background: linear-gradient(180deg,rgb(21, 67, 96),gray,lightblue);
+        background: linear-gradient(90deg,#3a6186 #89253e);
         top: 0;
         left: 2%;
         width: 10%;
@@ -189,6 +198,9 @@ main{
         height: 100%;
         margin: 0 0 0 15%;
         font-family: 'Times New Roman', Times, serif;
+    }
+    .reversop{
+        font-size: xx-small;
     }
 
 }
