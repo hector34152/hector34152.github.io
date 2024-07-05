@@ -49,7 +49,7 @@ main{
     font-size: x-large;
 }
 .card ul{
-    font-size: large;
+    font-size: medium;
     list-style: none;
     line-height: 5ex;
     grid-area: info;
