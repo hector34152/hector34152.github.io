@@ -46,10 +46,10 @@ main{
 .card h1{
     grid-area: name;
     margin-left: 30px;
-    font-size: 70px;
+    font-size: x-large;
 }
 .card ul{
-    font-size: xx-large;
+    font-size: large;
     list-style: none;
     line-height: 5ex;
     grid-area: info;
