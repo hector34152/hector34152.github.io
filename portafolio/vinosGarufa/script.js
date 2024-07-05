@@ -1,13 +1,9 @@
-let fs = require('fs');
-let buffer = fs.readFile("/datos.txt");
-let texto = buffer.toString();
-
-
+const fs = require("fs");
+let ruta = "'vino.html'"
 function changeInfo(a){
     let personal =[
-        "<div class='card'><h1>Lopez Rosso Cavas</h1><img src='img/01.png' width='40px'><ul><li>Trancoso, Zacatecas.</li><li>Viognier.</li><br><li>$790.00</li></ul></div>",
-        "<div class='card'><h1>Lopez Rosso Cavas</h1><img src='img/01.png' width='40px'><ul><li>Trancoso, Zacatecas.</li><li>Viognier.</li><br><li>$790.00</li></ul></div><div class='card'><h1>Lopez Rosso Cavas</h1><img src='img/01.png' width='40px'><ul><li>Trancoso, Zacatecas.</li><li>Viognier.</li><br><li>$790.00</li></ul></div>",
-        
+        `<div class='card' onclick="window.open('vino.html')"><h1>Lopez Rosso Cavas</h1><img src='img/01.png' width='40px'><ul><li>Trancoso, Zacatecas.</li><li>Viognier.</li><br><li>$790.00</li></ul></div>`,
+        `<div class='card onclick="window.open('vino.html')"'><h1>Lopez Rosso Cavas</h1><img src='img/01.png' width='40px'><ul><li>Trancoso, Zacatecas.</li><li>Viognier.</li><br><li>$790.00</li></ul></div><div class='card' onclick="window.open('vino.html')"><h1>Lopez Rosso Cavas</h1><img src='img/01.png' width='40px'><ul><li>Trancoso, Zacatecas.</li><li>Viognier.</li><br><li>$790.00</li></ul></div>`,
     ];
     document.getElementById("informacion").innerHTML = personal[a];
 }
