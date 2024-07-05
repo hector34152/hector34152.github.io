@@ -1,0 +1,70 @@
+html{
+    height: 100%;
+    background-color: black;
+    background-image: url(img/parra.jpeg);
+    color: white;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+body{
+    margin: 0;
+    display: grid;
+    height: 100%;
+    grid-template-rows: 5% 85% 10%;
+    grid-template-areas:
+    "head"
+    "main"
+    "food"
+}
+header{
+    grid-area: head;
+    background-color: black;
+    text-align: start;
+}
+header img{
+    margin: 0 0 0 5px;
+    filter: brightness(2);
+}
+main{
+    width: 100%;
+    grid-area: main;
+}
+.card{
+    height: 100%;
+    display: grid;
+    margin:5px;
+    border-radius: 10px;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 20% 50%;
+    grid-template-areas: 
+    "name name"
+    "foto info";
+    background-color: rgba(0, 0, 0, 0.773);
+    backdrop-filter: (1);
+}
+.card h1{
+    grid-area: name;
+    margin-left: 30px;
+    font-size: 70px;
+}
+.card ul{
+    font-size: xx-large;
+    list-style: none;
+    line-height: 5ex;
+    grid-area: info;
+}
+.card ul strong{
+    color: rgba(243, 60, 60, 0.884);
+}
+.card img{
+    margin: 0 0 0 150px;
+    width: 30%;
+    grid-area: foto;
+}
+footer{
+    grid-area: food;
+    background-color: black;
+    color: white;
+    align-content: center;
+}
