@@ -49,7 +49,6 @@ main{
     align-content: center;
     margin: 0;
     overflow-y: scroll;
-    font-size: large;
     list-style: none;
     line-height: 5ex;
     grid-area: info;
