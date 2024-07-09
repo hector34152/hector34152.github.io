@@ -11,7 +11,7 @@ body{
     margin: 0;
     display: grid;
     height: 100%;
-    grid-template-rows: 5% 85% 10%;
+    grid-template-rows: 5% 90% 5%;
     grid-template-areas:
     "head"
     "main"
@@ -27,29 +27,29 @@ header img{
     filter: brightness(2);
 }
 main{
+    margin: 0;
+    padding: 0;
     width: 100%;
     grid-area: main;
 }
 .card{
+    width: auto;
     height: 100%;
     display: grid;
     margin:5px;
     border-radius: 10px;
-    grid-template-columns: 40% 60%;
-    grid-template-rows: 20% 50%;
+    grid-template-columns: 50% 50%;
     grid-template-areas: 
-    "name name"
-    "foto info";
-    background-color: rgba(0, 0, 0, 0.773);
+    "info foto"
+    "info foto";
+    background-color: rgba(0, 0, 0, 0.814);
     backdrop-filter: (1);
 }
-.card h1{
-    grid-area: name;
-    margin-left: 30px;
-    font-size: x-large;
-}
 .card ul{
-    font-size: medium;
+    align-content: center;
+    margin: 0;
+    overflow-y: scroll;
+    font-size: large;
     list-style: none;
     line-height: 5ex;
     grid-area: info;
@@ -58,11 +58,15 @@ main{
     color: rgba(243, 60, 60, 0.884);
 }
 .card img{
-    margin: 0 0 0 150px;
-    width: 30%;
+    align-content: center;
+    filter: brightness(.8);
+    margin: 0 0 0 25%;
+    height: 100%;
+    width: auto;
     grid-area: foto;
 }
 footer{
+    margin: 0;
     grid-area: food;
     background-color: black;
     color: white;
