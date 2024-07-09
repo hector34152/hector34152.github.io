@@ -12,11 +12,6 @@ body{
     display: grid;
     text-align: center;
     height: 100%;
-    grid-template-rows: 95% 5%;
-    grid-template-columns: 15% 70% 15%;
-    grid-template-areas:
-    "main main main"
-    "food food food"
 }
 header{
     position: absolute;
