@@ -2,7 +2,6 @@ html{
     margin: 0;
     height: 100%;
     background-color: black;
-    background-image: url(img/Garufa.jpeg);
     color: white;
     background-size: cover;
     background-position: center;
@@ -34,7 +33,8 @@ aside{
     grid-area: lado;
 }
 nav{
-    font-family: copperplate;    font-size: large;
+    font-family: copperplate;   
+    font-size: large;
     grid-auto-flow: row;
     grid-auto-rows: 20%;
     overflow: hidden;
@@ -87,13 +87,13 @@ main{
 .card ul{
     list-style: none;
     grid-area: info;
-    text-align: start;
 }
 .card img{
     grid-area: foto;
 }
 footer{
-    font-family: copperplate;    font-style: italic;
+    font-family: copperplate;
+    font-style: italic;
     font-size: small;
     grid-area: food;
     background-color: black;
