@@ -11,11 +11,10 @@ body{
     margin: 0;
     display: grid;
     height: 100%;
-    grid-template-rows: 5% 90% 5%;
+    grid-template-rows: 5% 95%;
     grid-template-areas:
     "head"
     "main"
-    "food"
 }
 header{
     grid-area: head;
@@ -63,11 +62,4 @@ main{
     height: 100%;
     width: auto;
     grid-area: foto;
-}
-footer{
-    margin: 0;
-    grid-area: food;
-    background-color: black;
-    color: white;
-    align-content: center;
 }
