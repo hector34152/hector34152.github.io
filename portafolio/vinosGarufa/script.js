@@ -1,44 +1,11 @@
-const fs = require("fs");
-let ruta = "'vino.html'"
+
 function changeInfo(a){
-    let personal =[
-        `<div class='card' onclick="window.open('vino.html')"><h1>Lopez Rosso Cavas</h1><img src='img/01.png' width='40px'><ul><li>Trancoso, Zacatecas.</li><li>Viognier.</li><br><li>$790.00</li></ul></div>`,
-        `<div class='card onclick="window.open('vino.html')"'><h1>Lopez Rosso Cavas</h1><img src='img/01.png' width='40px'><ul><li>Trancoso, Zacatecas.</li><li>Viognier.</li><br><li>$790.00</li></ul></div><div class='card' onclick="window.open('vino.html')"><h1>Lopez Rosso Cavas</h1><img src='img/01.png' width='40px'><ul><li>Trancoso, Zacatecas.</li><li>Viognier.</li><br><li>$790.00</li></ul></div>`,
-    ];
-    document.getElementById("informacion").innerHTML = personal[a];
+    let info = [`<link rel="stylesheet" href="mainZ.css"><header><img src="img/logoGarufa.png" height="100%"></header><main><div class='card' onclick="window.open('vino.html')"><img src='img/TA/01.png' width='40px'><ul><li>Gran reserva</li><li><img class="icon" src="img/botella-de-vino.png">$790.00</li><li><img class="icon" src="img/copa-de-vino.png">$790.00</li></ul></div><div class='card' onclick="window.open('vino.html')"><img src='img/TA/02.png' width='40px'><ul><li>Gran reserva</li><li><img class="icon" src="img/botella-de-vino.png">$790.00</li><li><img class="icon" src="img/copa-de-vino.png">$790.00</li></ul></div><div class='card' onclick="window.open('vino.html')"><img src='img/TA/03.png' width='40px'><ul><li>Gran reserva</li><li><img class="icon" src="img/botella-de-vino.png">$790.00</li><li><img class="icon" src="img/copa-de-vino.png">$790.00</li></ul></div><div class='card' onclick="window.open('vino.html')"><img src='img/TA/04.png' width='40px'><ul><li>Gran reserva</li><li><img class="icon" src="img/botella-de-vino.png">$790.00</li><li><img class="icon" src="img/copa-de-vino.png">$790.00</li></ul></div><div class='card' onclick="window.open('vino.html')"><img src='img/TA/05.png' width='40px'><ul><li>Gran reserva</li><li><img class="icon" src="img/botella-de-vino.png">$790.00</li><li><img class="icon" src="img/copa-de-vino.png">$790.00</li></ul></div><div class='card' onclick="window.open('vino.html')"><img src='img/TA/06.png' width='40px'><ul><li>Gran reserva</li><li><img class="icon" src="img/botella-de-vino.png">$790.00</li><li><img class="icon" src="img/copa-de-vino.png">$790.00</li></ul></div></main><footer>Un momento para compartir</footer>`,
+    `0`];
+    document.getElementById("body").innerHTML = info[a];
 }
 function crear(){
-    let etiquetas = ["7","8","9","/","4","5","6","x","1","2","3","-","0","=","CE","+"];
-    var calculadora = document.getElementById("calculadora"); 
-    valor = 0.0;
-    signo = "";
-    calculadora.innerHTML = "<input type='text' class = 'pantalla' id='pantallaDos'><br>";
-    calculadora.innerHTML += "<input type='text' class = 'pantalla'id='pantalla'><br>";
-    calculadora.innerHTML += "<div id='botones'></div>";
-    var botones = document.getElementById("botones");
-
-    for(let i=0;i<etiquetas.length;i++){
-        if(etiquetas[i]=="+"){
-            botones.innerHTML += "<button type = 'button' class = 'opera' onclick = 'almacena(1);' id = '"+etiquetas[i]+"'>"+etiquetas[i]+"</button>";
-        }
-        else if(etiquetas[i]=="-"){
-            botones.innerHTML += "<button type = 'button' class = 'opera' onclick = 'almacena(2);' id = '"+etiquetas[i]+"'>"+etiquetas[i]+"</button>";
-        }
-        else if(etiquetas[i]=="/"){
-            botones.innerHTML += "<button type = 'button' class = 'opera' onclick = 'almacena(3);' id = '"+etiquetas[i]+"'>"+etiquetas[i]+"</button>";
-        }
-        else if(etiquetas[i]=="x"){
-            botones.innerHTML += "<button type = 'button' class = 'opera' onclick = 'almacena(4);' id = '"+etiquetas[i]+"'>"+etiquetas[i]+"</button>";
-        }
-        else if(etiquetas[i]=='CE'){
-            botones.innerHTML += "<button type = 'button' onclick = 'borrar();' id = '"+etiquetas[i]+"'>"+etiquetas[i]+"</button>";
-        }
-        else if(etiquetas[i]=='='){
-            botones.innerHTML += "<button type = 'button' onclick = 'resultado();' id = 'res'>"+etiquetas[i]+"</button>";
-        }
-        else{
-            botones.innerHTML += "<button type = 'button' onclick = 'mostrar("+etiquetas[i]+");' id = '"+etiquetas[i]+"'>"+etiquetas[i]+"</button>";
-
-        }
-    }
+    let info = [`<link rel="stylesheet" href="mainM.css"><header><img src="img/logoGarufa.png" height="100%"></header><aside></aside><nav><div onclick="changeInfo(0)">Vinos Zacatecanos</div><div onclick="changeInfo(1)">Vinos Mexicanos</div><div onclick="changeInfo(2)">Vinos Argentinos</div><div onclick="changeInfo(2)">Vinos Chilenos</div><div onclick="changeInfo(2)">Vinos Españoles</div><div onclick="changeInfo(2)">Vinos Franceses</div><div onclick="changeInfo(2)">Vinos Italianos</div><div onclick="changeInfo(2)">Vinos Blancos</div><div onclick="changeInfo(2)">Vinos Rosados</div><div onclick="changeInfo(2)">Vinos Espumosos</div></nav><footer>Un momento para compartir</footer>`,
+    `0`];
+    document.getElementById("body").innerHTML = info[0];
 }
