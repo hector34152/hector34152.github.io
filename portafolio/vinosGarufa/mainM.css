@@ -1,0 +1,106 @@
+html{
+    margin: 0;
+    height: 100%;
+    background-color: black;
+    background-image: url(img/Garufa.jpeg);
+    color: white;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+body{
+    margin: 0;
+    display: grid;
+    text-align: center;
+    height: 100%;
+    grid-template-rows: 20% 75% 5%;
+    grid-template-columns: 15% 70% 15%;
+    grid-template-areas:
+    "head head head"
+    "ladoA navbar ladoB"
+    "food food food"
+}
+header{
+    grid-area: head;
+    background-color: black;
+    text-align: start;
+}
+header img{
+    height: 90%;
+    margin: 10px 0 15px 20px;
+    filter: brightness(1);
+}
+aside{
+    grid-area: lado;
+}
+nav{
+    font-family: copperplate;    font-size: large;
+    grid-auto-flow: row;
+    grid-auto-rows: 20%;
+    overflow: hidden;
+    overflow-y: scroll;
+    grid-area: navbar;
+    align-items: center;
+    display: grid;
+    background-color: rgba(0, 0, 0, 0.675);
+}
+nav div{
+    align-content: center;
+    height: 90%;
+    margin: 0 5px 0 5px;
+    border-radius: 22px;
+    background-color: rgba(159, 158, 158, 0.218);
+}
+nav div:hover{
+    cursor: pointer;
+    background-color: rgba(252, 251, 251, 0.295);
+}
+nav a{
+    text-decoration: none;
+    color: white;
+}
+main{
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    grid-area: main;
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+}
+.card{
+    display: grid;
+    margin:5px;
+    border-radius: 10px;
+    grid-template-columns: 80% 20%;
+    grid-template-areas: 
+    "name name"
+    "info foto";
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.card :hover{
+    cursor: pointer;
+}
+.card h1{
+    grid-area: name;
+    font-size: large;
+}
+.card ul{
+    list-style: none;
+    grid-area: info;
+    text-align: start;
+}
+.card img{
+    grid-area: foto;
+}
+footer{
+    font-family: copperplate;    font-style: italic;
+    font-size: small;
+    grid-area: food;
+    background-color: black;
+    color: white;
+    align-content: center;
+}
+@font-face {
+    font-family: 'copperplate';
+    src: url('Fonts/copperplate.bold.ttf');
+}
