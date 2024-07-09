@@ -1,114 +1,27 @@
-html{
-    margin: 0;
-    height: 100%;
-    background-color: black;
-    color: white;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-body{
-    margin: 0;
-    display: grid;
-    text-align: center;
-    height: 100%;
-    grid-template-rows: 15% 80% 5%;
-    grid-template-columns: 15% 70% 15%;
-    grid-template-areas:
-    "head head head"
-    "main main main"
-    "food food food"
-}
-header{
-    grid-area: head;
-    background-color: black;
-    text-align: start;
-}
-header img{
-    height: 90%;
-    margin: 10px 0 15px 20px;
-    filter: brightness(1);
-}
-aside{
-    grid-area: lado;
-}
-nav{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: large;
-    grid-auto-flow: row;
-    grid-auto-rows: 20%;
-    overflow: hidden;
-    overflow-y: scroll;
-    grid-area: navbar;
-    align-items: center;
-    display: grid;
-    background-color: rgba(0, 0, 0, 0.675);
-}
-nav div{
-    align-content: center;
-    height: 90%;
-    margin: 0 5px 0 5px;
-    border-radius: 22px;
-    background-color: rgba(159, 158, 158, 0.218);
-}
-nav div:hover{
-    cursor: pointer;
-    background-color: rgba(252, 251, 251, 0.295);
-}
-nav a{
-    text-decoration: none;
-    color: white;
-}
-main{
-    display: flex;
-    margin: 0 auto;
-    width: 100%;
-    grid-area: main;
-    scroll-behavior: smooth;
-    overflow-y: scroll;
-}
-.card{
-    justify-items: center;
-    display: grid;
-    margin:0 10px 0 10px;
-    height: 100%;
-    border-radius: 10px;
-    grid-template-rows: 80% 20%;
-    grid-template-areas: 
-    "foto"
-    "info";
-    background-color: rgba(0, 0, 0, 0.8);
-}
-.card :hover{
-    cursor: pointer;
-}
-.card h1{
-    grid-area: name;
-    font-size: large;
-}
-.card ul{
-    list-style: none;
-    grid-area: info;
-    text-align: start;
-    margin: 0;
-}
-.card img{
-    grid-area: foto;
-    filter: brightness(.9);
-    height: 90%;
-    width: auto;
-}
-.card ul img{
-    width: 10%;
-    filter: invert(1);
-}
-footer{
-    font-family: 'Times New Roman', Times, serif;
-    font-style: italic;
-    font-size: small;
-    grid-area: food;
-    background-color: black;
-    color: white;
-    align-content: center;
-}
-::-webkit-scrollbar {display: none;}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informacion</title>
+    <link rel="stylesheet" href="mainVino.css">
+</head>
+<body>
+<header>
+    <img src="img/logoGarufa.png" height="100%">
+</header>
+<main>
+    <div class="card">
+        <ul>
+            <li><p><strong>Uva: </strong>Blend(Malbec, Cabernet Suavignon).</p></li>
+            <li><p><strong>Aroma: </strong>Aroma franco e intenso, se perciben los frutos rojos, grosellas, moras y se aprecian los frutos secos tales como almendras y nueces.Se percibe un fino bouquet con notas de roble, cacao, vainilla, café tostado, caramelo y tabaco.</p></li>
+            <li><p><strong>Maridage: </strong>Su sólida estructura, le permite acompañar las carnes rojas, el cabrito y el cordero, las pastas, los quesos y decididamente a la comida mexicana.</p></li>
+            <li><p><strong>Gusto: </strong>Se consolida la apreciación olfativa y resalta en el paladar, una sensación cálida, acidez suave, con taninos sedosos y aterciopelados. Bien definidos, con una textura noble, tersa y evolucionada se perciben los frutos secos, roble, café tostado, tabaco, cacao, y caramelo que se mesclan de manera sencilla y vigorosa. Es un vino equilibrado, con un retrogusto largo y agradable. Su un potencial de guarda es de un mínimo de 7 años.</p></li>
+            <li><p><strong>Origen: </strong>Zacatecas,Mexico.</p></li>
+        </ul>
+        <img src="img/TA/01.png">
+    </div>
+</main>
+<footer>Un momento para compartir</footer>
+</body>
+</html>
