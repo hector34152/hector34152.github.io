@@ -11,7 +11,7 @@ body{
     margin: 0;
     display: grid;
     height: 100%;
-    grid-template-rows: 5% 95%;
+    grid-template-rows: 5% auto;
     grid-template-areas:
     "head"
     "main"
