@@ -58,7 +58,7 @@ main{
     grid-area: info;
     background-image: url("../img/fondo.png");
     background-size: 4rem;
-    color: rgba(225,219,208,1);
+    color:rgb(57, 22, 28);
     border: .2rem solid rgb(57, 22, 28);
     border-radius: 1rem;
     list-style: none;
@@ -89,11 +89,11 @@ main{
     font-size: .8rem;
 }
 .info div p stronge{
-    color: rgba(225,219,208,1);
+    color:rgb(57, 22, 28);
     font-size: 2rem;
 }
 .info div img{
     width: 9%;
-    filter: invert(.8);
+    filter: invert(.1);
 }
   
