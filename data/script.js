@@ -18,7 +18,7 @@ let zac = [
 function crear(){
   console.log(botella);
   console.log(typeof(botella));
-    document.getElementById("body").innerHTML = `<link rel="stylesheet" href="./styles/mainCategoria.css"><a id="configuracion" onclick="validar()"><img src="img/configuraciones.png"></a>
+    document.getElementById("body").innerHTML = `<link rel="stylesheet" href="./styles/mainCategoria.css"><a id="configuracion" onclick="validar()"><img src="./img/configuraciones.png"></a>
 <header><img src="./img/logoGarufa.png"></header><main id="main"></main>`;
     document.getElementById("body").innerHTML += `<div class="side" id="A"></div>`;
     for(let i=0;i<menuC.length;i++){
@@ -38,7 +38,7 @@ function botellas(a,b){
   document.getElementById("body").innerHTML = 
   `<link rel="stylesheet" href="./styles/mainBotellas.css">
   <style> main{grid-template-columns: repeat(`+(a==0 ? botella[a][b].length : botella[a].length)+`,30%)}</style>
-  <header><p><img src="./img/logoGarufa.png"><stronge>`+(a==0 ? zac[b].name : menuC[a].name )+`</stronge><a onclick="`+(a==0 ? "categoria(0)" : "crear()")+`"><img src="./img/volver.png"></a></p></header>
+  <header><p>< src="./img/logoGarufa.png"><stronge>`+(a==0 ? zac[b].name : menuC[a].name )+`</stronge><a onclick="`+(a==0 ? "categoria(0)" : "crear()")+`">< src="./img/volver.png"></a></p></header>
   <main id ="main">`;
   for(let i=0;i<(a==0 ?botella[a][b].length:botella[a].length);i++){
     if((a==0 ?botella[a][b][i].flag:botella[a][i].flag)==true){
