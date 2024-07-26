@@ -1,0 +1,99 @@
+html{
+    color: rgba(101,41,51,1);
+    background-color: rgba(225,219,208,1);
+}
+body{
+    display: grid;
+    grid-template-rows: 0 100%;
+    grid-template-areas: 
+    "head"
+    "main";
+}
+header {
+    position: absolute;
+}
+header p{
+    display: grid;
+    grid-template-areas: 
+    "foto title"
+    "foto none";
+}
+header p image{
+    grid-area: foto;
+}
+header p stronge{
+    grid-area: title;
+    margin: 5rem 0 0 0;
+    font-family: Montserrat;
+    font-size: 2rem;
+}
+main{
+    display: grid;
+    grid-template-rows: 100%;
+    overflow-x: scroll;
+}
+.card{
+    display: grid;
+    margin: 0 .5rem;
+    grid-template-rows: 85% 15%;
+    grid-template-areas: 
+    "foto"
+    "info";
+}
+.card p{
+    margin: 0;
+    text-align: center;
+}
+.card p img{
+    grid-area: foto;
+    margin: 0;
+    filter: brightness(.9);
+    height:100%;
+    width: auto;
+}
+.info{
+    display: grid;
+    width: 100%;
+    margin: 0;
+    grid-area: info;
+    background-image: url("../img/fondo.png");
+    background-size: 4rem;
+    color: rgba(225,219,208,1);
+    border: .2rem solid rgb(57, 22, 28);
+    border-radius: 1rem;
+    list-style: none;
+    overflow-y: none;
+    text-align: center;
+    font-family: Baskerville;
+}
+.info h2 {
+    color: rgb(57, 22, 28);
+    border-radius: 3rem;
+    margin: auto 1rem;
+    padding: 1rem 0;
+    font-size: 2rem;
+}
+.remove{
+    display: none;
+}
+.active{
+    display: block;
+}
+.info div{
+    margin: 1rem;
+    grid-area: price;
+}
+.info div p{
+    display: inline;
+    width: 100%;
+    font-size: .8rem;
+}
+.info div p stronge{
+    color: rgba(225,219,208,1);
+    font-size: 2rem;
+}
+.info div img{
+    width: 9%;
+    filter: invert(.8);
+}
+  

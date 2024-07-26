@@ -1,0 +1,43 @@
+body{
+    text-align: center;
+}
+main{
+    display: grid;
+    align-content: center;
+    align-items: center;
+    color: rgba(225,219,208,255);
+    grid-template-areas: 
+    "logo logo logo"
+    "titulo titulo titulo"
+    "boton boton boton"
+    "none none año";
+    grid-template-columns: 30% 40% 30%;
+    grid-template-rows: auto;
+}
+main img{
+    grid-area: logo;
+    margin: 0 auto;
+    width: 90%;
+}
+main h1{
+    grid-area: titulo;
+    font-size: 4rem;
+    font-family: Baskerville;
+}
+main h4{
+    grid-area: año;
+    font-size: 2rem;
+    margin: 0;
+    font-family: Sacramento;
+}
+button{
+    grid-area: boton;
+    font-family: Baskerville;
+    font-size: 3rem;
+    margin: 0 auto;
+    width: 20%;
+    background-color: rgba(225,219,208,255);
+    color: rgba(101,41,51,255);
+    border: none;
+    border-radius: 100rem;
+}

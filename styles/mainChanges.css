@@ -1,0 +1,88 @@
+html{
+    height: 100%;
+    background-color: rgba(101,41,51,1);
+    background-color: rgba(225,219,208,1);
+
+    color: white;
+    background-size: 10%;
+    background-position: center;
+
+}
+body{
+    margin: 0;
+    display: grid;
+    height: 100%;
+    grid-template-rows:10% 90%;
+    grid-template-areas:
+    "head"
+    "main"
+}
+header{
+    grid-area: head;
+    color: rgba(101,41,51,1);
+    background-color: rgba(225,219,208,1);
+    text-align: start;
+    border-bottom: 0.5rem solid rgb(101, 41, 51);
+}
+header a{
+    position: relative;
+    margin: 0 10rem 0 0;
+    height: 10%;
+}
+header a img{
+    justify-items: center;
+    height: 100%;
+    filter: invert(.5);
+}
+header p {
+    margin: 0;
+    height: 100%;
+}
+header img{
+    text-align: end;
+    height: 100%;
+}
+main{
+    display: grid;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    grid-area: main;
+    grid-template-rows: 100%;
+}
+.card{
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+    grid-template-areas: 
+    "info foto";
+    background-color: rgba(101, 41, 51, 0.477);
+    color: rgba(225,219,208,1);
+
+}
+.card p{
+    grid-area: foto;
+    height: 97%;
+}
+.card ul{
+    align-content: center;
+    margin: 0;
+    overflow-y: scroll;
+    font-size: large;
+    list-style: none;
+    grid-area: info;
+    font-size: 1.5rem;
+}
+.card ul strong{
+    color: rgb(106, 22, 61);
+    font-size: 2rem;
+}
+.card img{
+    filter: brightness(.8);
+    margin: 0 0 0 25%;
+    height: 100%;
+    width: auto;
+    grid-area: foto;
+}

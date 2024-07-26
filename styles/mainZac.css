@@ -1,0 +1,42 @@
+html{
+    color: rgba(101,41,51,1);
+    background-color: rgba(225,219,208,1);
+}
+body{
+    display: grid;
+}
+header {
+    position: absolute;
+}
+header p{
+    display: grid;
+    grid-template-areas: 
+    "foto title"
+    "foto none";
+}
+header p image{
+    grid-area: foto;
+}
+header p stronge{
+    grid-area: title;
+    margin: 5rem 0 0 0;
+    font-family: Montserrat;
+    font-size: 2rem;
+}
+main{
+    display: flex;
+    overflow-y: hidden;
+    text-align: center;
+}
+.card p{
+    margin: 25rem 0 0 0;
+    border-radius: 1rem;
+    height: 20%;
+    width: auto;
+}
+.card p img{
+    grid-area: foto;
+    margin: 0;
+    height:100%;
+    width: auto;
+}

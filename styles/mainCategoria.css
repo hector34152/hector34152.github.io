@@ -1,0 +1,59 @@
+html{
+    color: rgba(101,41,51,255);
+    background-color: rgba(225,219,208,255);
+}
+body{
+    display: grid;
+    text-align: center;
+    height: 100%;
+    grid-template-rows: 25% 75%;
+    grid-template-columns: 30% 40% 30%;
+    grid-template-areas:
+    "head head head"
+    "A main B"
+}
+header{
+    border-bottom:1rem solid #652933;
+}
+header img{
+    height: 100%;
+}
+.side{
+    background-image: url("../img/fondo.png");
+    background-size: 10em;
+}
+#A{
+    grid-area: A;
+}
+#B{
+    grid-area: B;
+}
+main{
+    font-family: Montserrat;
+    grid-auto-flow: row;
+    grid-auto-rows: 20%;
+    overflow: hidden;
+    overflow-y: scroll;
+    align-items: center;
+    display: grid;
+    color: rgba(101,41,51,255);
+    background-color: rgba(225,219,208,255);
+}
+main div{
+    align-content: center;
+    height: 90%;
+    margin: 0 5px 0 5px;
+    border-radius: 6rem;
+    font-size: 2rem;
+    background-color: rgba(101,41,51,255);
+    color: rgba(225,219,208,255);
+    cursor: pointer;
+}
+main div:hover{
+    cursor: pointer;
+    background-color: rgba(101, 41, 51, 0.807);
+}
+main a{
+    text-decoration: none;
+    color: white;
+}
