@@ -18,7 +18,7 @@ let zac = [
 function crear(){
   console.log(botella);
   console.log(typeof(botella));
-    document.getElementById("body").innerHTML = `<link rel="stylesheet" href="./styles/mainCategoria.css"><a id="configuracion" onclick="validar()"><img src="./img/configuraciones.png"></a>
+    document.getElementById("body").innerHTML = `<link rel="stylesheet" href="./styles/mainCategoria.css"><a id="configuracion" onclick="validar()"><img src="img/configuraciones.png"></a>
 <header><img src="./img/logoGarufa.png"></header><main id="main"></main>`;
     document.getElementById("body").innerHTML += `<div class="side" id="A"></div>`;
     for(let i=0;i<menuC.length;i++){
@@ -38,7 +38,7 @@ function botellas(a,b){
   document.getElementById("body").innerHTML = 
   `<link rel="stylesheet" href="./styles/mainBotellas.css">
   <style> main{grid-template-columns: repeat(`+(a==0 ? botella[a][b].length : botella[a].length)+`,30%)}</style>
-  <header><p><img src="./img/logoGarufa.png"><stronge>`+(a==0 ? zac[b].name : menuC[a].name )+`</stronge><a onclick="`+(a==0 ? "categoria(0)" : "crear()")+`"><img src="./img/volver.png"></a></p></header>
+  <header><p><img src="./img/logoGarufa.png"><stronge>`+(a==0 ? zac[b].name : menuC[a].name )+`</stronge><a onclick="`+(a==0 ? "categoria(0)" : "crear()")+`"><img src="img/volver.png"></a></p></header>
   <main id ="main">`;
   for(let i=0;i<(a==0 ?botella[a][b].length:botella[a].length);i++){
     if((a==0 ?botella[a][b][i].flag:botella[a][i].flag)==true){
@@ -329,7 +329,7 @@ var botella = [
           origen:"Valle de Parras, Coahuila, México."
         },
         {
-          nombre: "Casa Madero Cabernet Suavignon",
+          nombre: "Casa Madero Cabernet",
           precioA: "$1,100.00",
           precioB: "no",
           flag: true,
@@ -419,37 +419,37 @@ var botella = [
           origen:"Mendoza, Argentina."
       },
       {
-          nombre: "Navarro Correas Malbec",
+          nombre: "Navarro Correas Colección Privada Malbec",
           precioA: "$1,250.00",
           precioB: "no",
           flag: true,
           uva:"Malbec.",
-          aroma:"Notas a moras, membrillo y especias.",
-          maridaje:"Cordero, carnes de cerdo con salsas intensas y quesos maduros.",
-          gusto:"Cuerpo medio y taninos sedosos. Afrutado y de larga persistencia.",
+          aroma:"Sabores a ciruelas maduras y aromas a violetas.",
+          maridaje:"Acompaña bien carnes rojas de vaca o cerdo asadas con acompañamientos de intensidad media. Aves con acompañamientos o salsas cremosas, pastas con carnes y risottos. Quesos semi duros.",
+          gusto:"Cuerpo medio y taninos redondos. Final muy frutado y fresco con buena persistencia.",
           origen:"Luján de Cuyo, Mendoza, Argentina."
       },
       {
-          nombre: "Navarro Correas Colección Privada",
+          nombre: "Navarro Correas Colección Privada Blend",
           precioA: "$1,200.00",
           precioB: "no",
           flag: true,
-          uva:".",
-          aroma:".",
-          maridaje:".",
-          gusto:".",
-          origen:"."
+          uva:"Cabernet Sauvignon, Malbec, Merlot.",
+          aroma:"Con notas a moras, membrillo y especias.",
+          maridaje:"Acompaña bien cordero, carnes de cerdo con salsas intensas y quesos maduros.",
+          gusto:"De cuerpo medio y taninos sedosos. Frutado y de larga persistencia en boca.",
+          origen:"Mendoza, Argentina."
       },
       {
           nombre: "Terrazas",
           precioA: "$1,308.00",
           precioB: "no",
           flag: true,
-          uva:".",
-          aroma:".",
-          maridaje:".",
-          gusto:".",
-          origen:"."
+          uva:"Malbec.",
+          aroma:"Aromas de violetas, cerezas negras y ciruelas, pimienta negra y cacao.",
+          maridaje:"Lomo, ratatouile mediterráneo, tarta de chocolate semiamargo y helado de mascarpone con frutos rojos.",
+          gusto:"Entrada dulce y jugosa revela fineza, taninos delicados y un elegante final de frutos negros.",
+          origen:"Valle de Uco, Mendoza, Argentina."
       }
   ],
   [//Chilenos
@@ -458,66 +458,66 @@ var botella = [
           precioA: "$1,308.00",
           precioB: "$95.00",
           flag: true,
-          uva:".",
-          aroma:".",
-          maridaje:".",
-          gusto:".",
-          origen:"."
+          uva:"Cabernet Sauvignon.",
+          aroma:"Desarrolla un carácter frutal con notas de ciruelas rojas y frambuesas.",
+          maridaje:"Carnes rojas, pastas, pizzas, quesos suaves.",
+          gusto:"Taninos armónicos, de cuerpo medio y agradable final en boca.",
+          origen:"Valle Central, Chile."
       },
       {
           nombre: "Undurraga",
           precioA: "$555.00",
           precioB: "no",
           flag: true,
-          uva:".",
-          aroma:".",
-          maridaje:".",
-          gusto:".",
-          origen:"."
+          uva:"Cabernet Sauvignon.",
+          aroma:"Delata aromas delicados con tonos afrutados y levemente especiados, complejo, con matices florales, vainilla y sotobosque.",
+          maridaje:"Se recomienda acompañar con carnes rojas.",
+          gusto:"Expresivo en nariz con aromas a cassis y grosella negra.",
+          origen:"Valle Central, Chile."
       },
       {
           nombre: "Santa Digna",
           precioA: "$681.00",
           precioB: "$175.00",
           flag: true,
-          uva:".",
-          aroma:".",
-          maridaje:".",
-          gusto:".",
-          origen:"."
+          uva:"Cabernet Sauvignon.",
+          aroma:"Aromas frutales de zarzamora y grosellas, con aromas tostados de café y chocolate, además de sensaciones de pimiento verde, cuero y anís.",
+          maridaje:"Ideal para acompañar cortes de carne a la parrilla, embutidos, antojitos mexicanos, puntas de res con salsa de pimienta, puré de papa, sándwich de pierna, carne de cerdo en adobo.",
+          gusto:"En boca es sedoso en taninos, elegante y buen final de boca, vino que confirma sabores de frutas y especias.",
+          origen:"Valle Central, Chile."
       },
       {
           nombre: "Casillero del Diablo",
           precioA: "$589.00",
           precioB: "no",
           flag: true,
-          uva:".",
-          aroma:".",
-          maridaje:".",
-          gusto:".",
-          origen:"."
+          uva:"Cabernet Sauvignon.",
+          aroma:"En nariz expresa marcadas y cautivantes notas a cerezas, grosellas y ciruelas negras, junto con a sutiles toques a vainilla aportados por la guarda en barrica.",
+          maridaje:"Carnes rojas, platos condimentados y quesos maduros como el Gruyere o azul.",
+          gusto:"Mostrando una firme estructura, este vino posee una gran concentración de fruta, donde destaca la ciruela y mora, dando paso a taninos elegantes y jugosos permitiendo entregar un largo final.",
+          origen:"Valle Central, Chile."
       },
       {
           nombre: "Casillero del Diablo 1/2",
           precioA: "$382.00",
           precioB: "no",
           flag: true,
-          uva:".",
-          aroma:".",
-          maridaje:".",
-          gusto:".",
-          origen:"."
+          uva:"Cabernet Sauvignon.",
+          aroma:"En nariz expresa marcadas y cautivantes notas a cerezas, grosellas y ciruelas negras, junto con a sutiles toques a vainilla aportados por la guarda en barrica.",
+          maridaje:"Carnes rojas, platos condimentados y quesos maduros como el Gruyere o azul.",
+          gusto:"Mostrando una firme estructura, este vino posee una gran concentración de fruta, donde destaca la ciruela y mora, dando paso a taninos elegantes y jugosos permitiendo entregar un largo final.",
+          origen:"Valle Central, Chile."
       },
       {
-          nombre: "Cousino Macul",
+          nombre: "Cousiño Macul",
           precioA: "$678.00",
           precioB: "no",
           flag: true,
-          uva:".",
-          aroma:".",
-          maridaje:".",
-          gusto:".",
-          origen:"."
+          uva:"Merlot.",
+          aroma:"Suave y delicada que nos recuerdan aromas a berries, resaltando moras y frambuesas maduras con algo de ciruelas negras para luego dar paso a pequeños toques de casís y finalizar con delicadas especias y romero.",
+          maridaje:"Se recomienda acompañar con ensaladas estilo césar, aves, pizzas, carnes rojas livianas, pastas e incluso pescados.",
+          gusto:"Textura suave, amable y sedoso, de acidez media, con notas de frambuesas y cerezas maduras.",
+          origen:"Valle del Maipo, Chile."
       }
   ],
   [//Españoles
@@ -526,82 +526,82 @@ var botella = [
           precioA: "$975.00",
           precioB: "no",
           flag: true,
-          uva:".",
-          aroma:".",
-          maridaje:".",
-          gusto:".",
-          origen:"."
+          uva:"Tempranillo(85%), Garnacha y Mazuelo(15%).",
+          aroma:"Aromas frescos a frutos rojos destacando el regaliz en perfecto ensamblaje con los aromas golosos a vainilla, toffe y ligeros tostados procedentes de la barrica americana donde pasa su crianza.",
+          maridaje:"En boca tiene un paso perfecto, es redondo equilibrado con un toque fresco al final que le da una largura proporcionando una retronasal con notas suaves a pastelería que nos invita a seguir bebiendo.",
+          gusto:"En nariz aromas de bayas rojas, muestra elegancia en la boca, con algunas notas de especias y una acidez equilibrada.",
+          origen:"El maridaje adecuado es con la dieta mediterranea."
       },
       {
           nombre: "Gran Sangre de Toro",
           precioA: "$900.00",
           precioB: "$230.00",
           flag: true,
-          uva:".",
-          aroma:".",
-          maridaje:".",
-          gusto:".",
-          origen:"."
+          uva:"Garnacha, Mazuelo y Syrah.",
+          aroma:"Notas de frutos maduros, con elegantes tonos de madera y especias.",
+          maridaje:"Ideal para platillos agridulces, pimientos rellenos y comida oriental.",
+          gusto:"De carácter cálido en boca, serio y profundo.",
+          origen:"Pimientos rellenos, carne con especias y salsas agridulces."
       },    {
           nombre: "Sangre de Toro 1/2",
           precioA: "$363.00",
           precioB: "no",
           flag: true,
-          uva:".",
-          aroma:".",
-          maridaje:".",
-          gusto:".",
-          origen:"."
+          uva:"Garnacha, Mazuelo y Syrah.",
+          aroma:"Notas de frutos maduros, con elegantes tonos de madera y especias.",
+          maridaje:"Ideal para platillos agridulces, pimientos rellenos y comida oriental.",
+          gusto:"De carácter cálido en boca, serio y profundo.",
+          origen:"Pimientos rellenos, carne con especias y salsas agridulces."
       },    {
           nombre: "Atrium",
           precioA: "$1,080.00",
           precioB: "$275.00",
           flag: true,
-          uva:".",
-          aroma:".",
-          maridaje:".",
-          gusto:".",
-          origen:"."
+          uva:"Merlot.",
+          aroma:"Aroma frutal (confitura de moras) con un matiz elegante y singular que recuerda a la corteza de naranja.",
+          maridaje:"Perfecto con ternera, el cerdo o el pato salvaje. También puede acompañar pescados a la plancha o al horno.",
+          gusto:"Es redondo, pleno, con un tanino muy fino y perfumado.",
+          origen:""
       },    {
           nombre: "La Planta",
           precioA: "$1,170.00",
           precioB: "$295.00",
           flag: true,
-          uva:".",
-          aroma:".",
-          maridaje:".",
+          uva:"Tempranillo.",
+          aroma:"Aromas de frutos rojos con sensaciones de tostados, chocolate, canela, notas de maderas nobles y lácteos.",
+          maridaje:"Carnes rojas a la parrilla, legumbres, arroces, perfecto para acompañar un buen cocido.",
           gusto:".",
-          origen:"."
+          origen:"Ribera del Duero, España."
       },    {
-          nombre: "Marqués de Cáceres",
+          nombre: "Marqués de Cáceres Crianza",
           precioA: "$1,010.00",
           precioB: "no",
           flag: true,
-          uva:".",
-          aroma:".",
-          maridaje:".",
-          gusto:".",
-          origen:"."
+          uva:"Tempranillo blend.",
+          aroma:"Expresivo de pequeños frutos rojos (frambuesa, arándanos, cerezas..) ensalzados por notas especiadas y un fondo avainillado.",
+          maridaje:"Perfecto para acompañar la cocina mediterránea, fritura, verduras a la parrilla, legumbres, paella, arroces, pasta, pescado en salsa de tomate, jamones y chorizos, patés, carnes asadas, estofadas o a la parrilla, quesos suaves o semicurados.",
+          gusto:"Su estructura subraya sus sabores densos y sus taninos consistentes.",
+          origen:"Región Rioja, España."
       },    {
-          nombre: "Matarromera",
+          nombre: "Matarromera Crianza",
           precioA: "$2,460.00",
           precioB: "no",
           flag: true,
-          uva:".",
-          aroma:".",
-          maridaje:".",
-          gusto:".",
-          origen:"."
+          uva:"Tempranillo.",
+          aroma:"Aromas de frutos rojos y negros como zarzamora, frambuesa y ciruela, con aromas lácteos, además de sensaciones de vainilla, cuero y cacao.",
+          maridaje:"Idóneo para acompañar un atún sellado, unas costillas de cordero o cortes de buen marmoleo, aves a las brasas, algunos estofados, comida ligeramente condimentada, pastas cremosas y carnes rojas.",
+          gusto:"Potente, carnoso, de taninos agradables, con cuerpo y acidez bien ensamblados.",
+          origen:"Ribera del Duero, España."
       },    {
           nombre: "Mas La Plana",
           precioA: "$4,000.00",
           precioB: "no",
           flag: true,
-          uva:".",
-          aroma:".",
-          maridaje:".",
-          gusto:".",
-          origen:"."
+          uva:"Cabernet Sauvignon.",
+          aroma:"Aromas intensos, notas de arándanos confitados y cerezas, tiene aroma de trufa, ligeras especias y hierbas de olor.",
+          maridaje:"Carne de caza, quesos maduros, quesos de oveja, cordero con salsa de morillas, embutidos, lechón, papa al horno y roast beef.",
+          gusto:"Elegante con postgusto prolongado y taninos suaves y presentes, excelente acidez, redondo y con perfecta expresión en boca.",
+          origen:"Penedes, España."
       },
   ],
   [//Franceses
