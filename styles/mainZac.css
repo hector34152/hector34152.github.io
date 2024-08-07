@@ -27,6 +27,8 @@ main{
     display: flex;
     overflow-y: hidden;
     text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 .card p{
     margin: 25rem 0 0 0;
