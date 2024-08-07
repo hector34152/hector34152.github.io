@@ -6,6 +6,8 @@ html{
 body{
     height: 100%;
     margin: 0;
+    overflow-y: hidden;
+    overflow-x: hidden;
 }
 header{
     grid-area: head;
