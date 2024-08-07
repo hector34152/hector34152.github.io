@@ -17,7 +17,7 @@ main{
 main img{
     grid-area: logo;
     margin: 0 auto;
-    width: 90%;
+    width: 80%;
 }
 main h1{
     grid-area: titulo;
