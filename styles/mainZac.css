@@ -4,6 +4,8 @@ html{
 }
 body{
     display: grid;
+    justify-content: center;
+
 }
 header {
     position: absolute;
