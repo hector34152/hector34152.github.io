@@ -30,7 +30,7 @@ main{
     overflow-x: scroll;
     text-align: center;
     justify-content: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
 .card p{
     margin: 25rem 6rem 0 0;
