@@ -31,6 +31,7 @@ main{
     display: grid;
     grid-template-rows: 100%;
     overflow-x: scroll;
+    overflow-y: hidden;
 }
 .card{
     display: grid;
