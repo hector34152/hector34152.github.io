@@ -47,7 +47,7 @@ button{
     margin: 0 auto;
     width: 30%;
     background-color: rgba(225,219,208,1);
-    color: rgba(101,41,51,1);
+    color: black;
     border: none;
     border-radius: 100rem;
 }
