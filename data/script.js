@@ -18,7 +18,7 @@ let zac = [
 function crear(){
   console.log(botella);
   console.log(typeof(botella));
-    document.getElementById("body").innerHTML = `<link rel="stylesheet" href="./styles/mainCategoria.css"><a id="configuracion" onclick="validar()"><img src="img/configuraciones.png"></a>
+    document.getElementById("body").innerHTML = `<link rel="stylesheet" href="./styles/mainCategoria.css">
 <header><img src="./img/logoGarufa.png"></header><main id="main"></main>`;
     document.getElementById("body").innerHTML += `<div class="side" id="A"></div>`;
     for(let i=0;i<menuC.length;i++){
