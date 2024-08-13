@@ -1,11 +1,19 @@
 body{
     text-align: center;
+    background-color: black;
+}
+#carouselExampleSlidesOnly{
+    filter: opacity(.5);
+    width: 100%;
+    position: absolute;
+    z-index: 0;
 }
 main{
     display: grid;
+    position: absolute;
     align-content: center;
     align-items: center;
-    color: rgba(225,219,208,255);
+    color: rgba(225,219,208,1);
     grid-template-areas: 
     "logo logo logo"
     "titulo titulo titulo"
@@ -13,11 +21,13 @@ main{
     "none none año";
     grid-template-columns: 30% 40% 30%;
     grid-template-rows: auto;
+    z-index: 3;
 }
-main img{
+main #logo{
     grid-area: logo;
     margin: 0 auto;
-    width: 80%;
+    width: 70%;
+    z-index: 2;
 }
 main h1{
     grid-area: titulo;
