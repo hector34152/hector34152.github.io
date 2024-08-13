@@ -1,7 +1,7 @@
 html{
     margin: 0;
     height: 100%;
-    background-color: rgba(101,41,51,255);
+    background-color: rgba(101,41,51,1);
 }
 body{
     height: 100%;
@@ -29,8 +29,6 @@ main{
     width: 100%;
     height: 100%;
     scrollbar-width: none;
-
-
 }
 #configuracion{
     position: absolute;
