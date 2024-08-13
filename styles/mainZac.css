@@ -5,7 +5,6 @@ html{
 body{
     display: grid;
     justify-content: center;
-
 }
 header {
     position: absolute;
@@ -26,14 +25,16 @@ header p stronge{
     font-size: 2rem;
 }
 main{
-    display: flex;
-    overflow-x: scroll;
+    display: grid;
+    grid-template-rows: 100%;
+    overflow-y: scroll;
     text-align: center;
     justify-content: center;
-    flex-wrap: nowrap;
+    grid-template-columns: repeat(3,30%)
 }
 .card p{
-    margin: 25rem 0 0 0;
+    margin: 25rem auto 0 0;
+    margin: 25rem auto 0 0;
     border-radius: 1rem;
     height: 20%;
     width: auto;
