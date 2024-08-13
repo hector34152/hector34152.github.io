@@ -3,7 +3,6 @@ html{
     background-color: rgba(225,219,208,1);
 }
 body{
-    display: grid;
     justify-content: center;
 }
 header {
