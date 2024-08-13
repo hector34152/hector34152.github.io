@@ -43,7 +43,7 @@ main h4{
 button{
     grid-area: boton;
     font-family: Baskerville;
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin: 0 auto;
     width: 30%;
     background-color: rgba(225,219,208,1);
