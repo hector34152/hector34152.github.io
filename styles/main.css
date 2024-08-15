@@ -20,9 +20,11 @@ header a{
     z-index: 1;
 }
 header a img{
-    margin: 0 1rem;
+    position: absolute;
+    top: 600%;
     height: 100%;
     filter: invert(.5);
+    z-index: 3;
 }
 main{
     grid-area: main;
@@ -54,4 +56,14 @@ main{
 @font-face {
     font-family: 'Sacramento';
     src: url('../Fonts/Sacramento/Sacramento-Regular.ttf');
+}
+@media only screen and (max-width: 500px) {
+
+    header p img{
+        width: 100%;
+    }
+    header a img{
+        position: relative;
+        top: 800%;
+    }
 }
