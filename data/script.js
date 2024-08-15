@@ -37,8 +37,8 @@ function validar(){
 function botellas(a,b){
   document.getElementById("body").innerHTML = 
   `<link rel="stylesheet" href="./styles/mainBotellas.css">
-  <style> main{grid-template-columns: repeat(`+(a==0 ? botella[a][b].length : botella[a].length)+`,30%)}</style>
-  <header><p><img src="./img/logoGarufa.png"><stronge>`+(a==0 ? zac[b].name : menuC[a].name )+`</stronge><a onclick="`+(a==0 ? "categoria(0)" : "crear()")+`"><img src="img/volver.png"></a></p></header>
+  <style> main{grid-template-columns: repeat(`+(a==0 ? botella[a][b].length : botella[a].length)+`,40%)}</style>
+  <header><p><img src="./img/logoGarufa.png"><stronge>`+(a==0 ? zac[b].name : menuC[a].name )+`<img src="./img/flags/0`+(a==0 || a > 5 ? 5 : a )+`.png"></stronge><a onclick="`+(a==0 ? "categoria(0)" : "crear()")+`"><img src="img/volver.png"></a></p></header>
   <main id ="main">`;
   for(let i=0;i<(a==0 ?botella[a][b].length:botella[a].length);i++){
     if((a==0 ?botella[a][b][i].flag:botella[a][i].flag)==true){
