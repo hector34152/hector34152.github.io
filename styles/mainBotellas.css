@@ -97,4 +97,30 @@ main{
     width: 9%;
     filter: invert(.1);
 }
-  
+@media only screen and (max-width: 600px) {
+    body{
+        grid-template-rows: 30% 70%;
+    }
+    header p stronge{
+        grid-area: title;
+        margin-top: 2rem;
+        font-size: 1.5rem;
+    }
+    header p stronge img{
+        width: 50%;
+    }
+    .card{
+        margin: 0 .1rem;
+        grid-template-rows: 80% 20%;
+    }
+    .info h2 {
+        padding: 0;
+        font-size: .8rem;
+    }
+    .info .precio p{
+        font-size: .3rem;
+    }
+    .info .precio p stronge{
+        font-size: .5rem;
+    }
+}
