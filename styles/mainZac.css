@@ -44,3 +44,17 @@ main{
     height:100%;
     width: auto;
 }
+@media only screen and (max-width: 600px) {
+    header p{
+        grid-template-areas: 
+        "foto foto"
+        "title title";
+    }
+    .card p img{
+        height:40%;
+        width: auto;
+    }
+    header p stronge {
+        margin: 0;
+    }
+}
