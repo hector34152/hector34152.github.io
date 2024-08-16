@@ -1,69 +1,63 @@
-html{
-    margin: 0;
-    height: 100%;
-    overflow-y: hidden;
-    overflow-x: hidden;
-}
 body{
-    height: 100%;
-    margin: 0;
-    overflow-y: hidden;
-    overflow-x: hidden;
+    text-align: center;
+    background-color: black;
 }
-header{
-    grid-area: head;
-}
-header a{
+#carouselExampleSlidesOnly{
+    filter: opacity(.5);
     position: absolute;
-    border-radius: 5rem;
-    height: 15%;
-    z-index: 1;
-}
-header a img{
-    position: absolute;
-    top: 600%;
-    height: 100%;
-    filter: invert(.5);
-    z-index: 3;
+    z-index: 0;
 }
 main{
-    grid-area: main;
-    margin: 0;
-    width: 100%;
-    height: 100%;
-    scrollbar-width: none;
-}
-#configuracion{
+    display: grid;
     position: absolute;
-    left: 0;
-    top: 0;
-    width: 3%;
+    align-content: center;
+    align-items: center;
+    color: rgba(225,219,208,1);
+    grid-template-areas: 
+    "logo logo logo"
+    "titulo titulo titulo"
+    "boton boton boton"
+    "none none año";
+    grid-template-columns: 30% 40% 30%;
+    grid-template-rows: auto;
+    z-index: 3;
 }
-#configuracion img{
-    margin: 1rem;
-    padding: 0;
-    width: 100%;
-    filter: invert(.5);
+main #logo{
+    grid-area: logo;
+    margin: 0 auto;
+    width: 70%;
+    z-index: 2;
 }
-@font-face {
-    font-family: 'Montserrat';
-    src: url('../Fonts/Montserrat/Montserrat-VariableFont_wght.ttf');
+main h1{
+    grid-area: titulo;
+    font-size: clamp(1.5rem,5vw,4rem);
+    font-family: Baskerville;
+    margin: clamp(.5rem,4vw,2rem) 0;
 }
-@font-face {
-    font-family: 'Baskerville';
-    src: url('../Fonts/Baskerville/LibreBaskerville-Regular.ttf');
+main h4{
+    grid-area: año;
+    font-size: clamp(.5rem,4vw,2rem);
+    margin: 0;
+    font-family: Sacramento;
 }
-@font-face {
-    font-family: 'Sacramento';
-    src: url('../Fonts/Sacramento/Sacramento-Regular.ttf');
+button{
+    grid-area: boton;
+    font-family: Baskerville;
+    font-size: clamp(.5rem,4vw,2.5rem);
+    margin: 0 auto;
+    width: 30%;
+    background-color: rgba(225,219,208,1);
+    color: rgba(0, 0, 0, 0.726);
+    border: none;
+    border-radius: 100rem;
 }
 @media only screen and (max-width: 500px) {
-
-    header p img{
-        width: 100%;
+    body{
+        width: auto;
+        height: 100%;
+        background-color: rgba(101,41,51,1);
     }
-    header a img{
-        position: relative;
-        top: 800%;
+    #carouselExampleSlidesOnly{
+        display: none;
     }
 }
