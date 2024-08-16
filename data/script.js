@@ -36,9 +36,9 @@ function validar(){
 }
 function botellas(a,b){
   document.getElementById("body").innerHTML = 
-  `<link rel="stylesheet" href="./styles/mainBotellas.css">
-  <style> main{grid-template-columns: repeat(`+(a==0 ? botella[a][b].length : botella[a].length)+`,40%)}</style>
-  <header><p><img src="./img/logoGarufa.png"><stronge>`+(a==0 ? zac[b].name : menuC[a].name )+`<img src="./img/flags/0`+(a==0 || a > 5 ? 5 : a )+`.png"></stronge><a onclick="`+(a==0 ? "categoria(0)" : "crear()")+`"><img src="img/volver.png"></a></p></header>
+  `<link rel="stylesheet" href="./styles/mainBotellas.css"><a id= "volver" onclick="`+(a==0 ? "categoria(0)" : "crear()")+`"><img src="img/volver.png"></a>
+  <style> main{grid-template-columns: repeat(`+(a==0 ? botella[a][b].length : botella[a].length)+`,35%)}</style>
+  <header><p><img src="./img/logoGarufa.png"><stronge>`+(a==0 ? zac[b].name : menuC[a].name )+`<img src="./img/flags/0`+( a > 5 ? 5 : a )+`.png"></stronge></p></header>
   <main id ="main">`;
   for(let i=0;i<(a==0 ?botella[a][b].length:botella[a].length);i++){
     if((a==0 ?botella[a][b][i].flag:botella[a][i].flag)==true){
@@ -57,7 +57,7 @@ function botellas(a,b){
 function categoria(a){
   if(parseInt(a)==0){
     document.getElementById("body").innerHTML = 
-    `<link rel="stylesheet" href="./styles/mainZac.css"><header><p><img src="./img/logoGarufa.png"><stronge>`+menuC[a].name+`</stronge><a onclick="crear()"><img src="./img/volver.png"></a></p></header><main id ="main">`;
+    `<a id= "volver" onclick="crear()"><img src="./img/volver.png"></a><link rel="stylesheet" href="./styles/mainZac.css"><header><p><img src="./img/logoGarufa.png"><stronge>`+menuC[a].name+`</stronge></p></header><main id ="main">`;
     for(let i=0;i<zac.length;i++){
       document.getElementById("main").innerHTML += 
       `<div class = "card"><p onclick = "botellas(`+a+`,`+i+`)"><img src='./img/vinos_Zacatecanos/0`+(i+1)+`.png'></p>`;
@@ -70,8 +70,9 @@ function categoria(a){
 function info(a,b,c){
   document.getElementById("body").innerHTML = `
     <link rel="stylesheet" href="./styles/mainVino.css">
+    <a id= "volver" onclick=`+(a==0 ? "botellas("+a+","+b+")" : "botellas("+a+",1)")+`><img src="./img/volver.png"></a>
     <header>  
-      <p><a onclick=`+(a==0 ? "botellas("+a+","+b+")" : "botellas("+a+",1)")+`><img src="./img/volver.png"></a><img src="./img/logoGarufa.png"><strong>`+(a==0 ? botella[a][b][c].nombre : botella[a][c].nombre)+`</strong></p>
+      <p><img src="./img/logoGarufa.png"><strong>`+(a==0 ? botella[a][b][c].nombre : botella[a][c].nombre)+`</strong></p>
     </header>
     <main>
     <div class="card">
