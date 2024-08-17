@@ -1,14 +1,15 @@
 let menuC = [
-  {name:"Vinos Zacatecanos",label:"vinos_Zacatecanos"},
-  {name:"Vinos Mexicanos",label:"vinos_mexicanos"},
-  {name:"Vinos Argentinos",label:"vinos_argentinos"},
-  {name:"Vinos Chilenos",label:"vinos_chilenos"},
-  {name:"Vinos Españoles",label:"vinos_españoles"},
-  {name:"Vinos Franceses",label:"vinos_franceses"},
-  {name:"Vinos Italianos",label:"vinos_italianos"},
-  {name:"Vinos Blancos",label:"vinos_blancos"},
-  {name:"Vinos Rosados",label:"vinos_rosados"},
-  {name:"Vinos Espumosos",label:"vinos_espumosos"},
+  {name:"Zacatecanos",label:"vinos_Zacatecanos"},
+  {name:"Mexicanos",label:"vinos_mexicanos"},
+  {name:"Argentinos",label:"vinos_argentinos"},
+  {name:"Chilenos",label:"vinos_chilenos"},
+  {name:"Españoles",label:"vinos_españoles"},
+  {name:"Franceses",label:"vinos_franceses"},
+  {name:"Italianos",label:"vinos_italianos"},
+  {name:"Blancos",label:"vinos_blancos"},
+  {name:"Rosados",label:"vinos_rosados"},
+  {name:"Espumosos",label:"vinos_espumosos"},
+  {name:"Recomendación Mensual",label:"recomendacion_mes"}
 ]
 let zac = [
   {name :"Lopez Rosso",label:"LR"},
@@ -38,7 +39,7 @@ function botellas(a,b){
   document.getElementById("body").innerHTML = 
   `<link rel="stylesheet" href="./styles/mainBotellas.css"><a id= "volver" onclick="`+(a==0 ? "categoria(0)" : "crear()")+`"><img src="img/volver.png"></a>
   <style> main{grid-template-columns: repeat(`+(a==0 ? botella[a][b].length : botella[a].length)+`,35%)}</style>
-  <header><p><img src="./img/logoGarufa.png"><stronge>`+(a==0 ? zac[b].name : menuC[a].name )+`<img src="./img/flags/0`+( a > 5 ? 5 : a )+`.png"></stronge></p></header>
+  <header><p><img src="./img/logoGarufa.png"><stronge><img src="./img/flags/0`+( a > 5 ? 5 : a )+`.png"><br>`+(a==0 ? zac[b].name : menuC[a].name )+`</stronge></p></header>
   <main id ="main">`;
   for(let i=0;i<(a==0 ?botella[a][b].length:botella[a].length);i++){
     if((a==0 ?botella[a][b][i].flag:botella[a][i].flag)==true){
@@ -724,5 +725,18 @@ var botella = [
           gusto:"Sabor suave y placentero donde la nota dulce es bien balanceada con la acidez y la ligera efervescencia natural.",
           origen:"Emilia Romagna, Italia."
       }
-  ]
+  ],
+    [//Recomendaciones
+      {
+        nombre: "Moet & Chandon",
+        precioA: "$3,100.00",
+        precioB: "no",
+        flag: true,
+        uva:"Chardonnay, Pinot Meunier, Pinot Noir.",
+        aroma:"Intensidad vibrante de manzana verde, cítricos y matices minerales y florales. Aromas delicadamente vinosos, con toques de tilo y flor de vid.",
+        maridaje:"Este champagne se erige como compañero ideal para aperitivos, ostras, mariscos o quesos de pasta blanda. Su versatilidad en maridajes lo convierte en un invitado bienvenido en cualquier ocasión.",
+        gusto:"Generoso, con una combinación única de suntuosidad frutal, burbujas finas y vivacidad cítrica. Se distingue por un sabor dominado por notas de bollería y frutas, con gran amplitud en boca y un final amable e intenso.",
+        origen:"Épernay, Francia."
+    }
+]
   ]
