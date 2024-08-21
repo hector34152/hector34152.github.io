@@ -39,7 +39,7 @@ function botellas(a,b){
   document.getElementById("body").innerHTML = 
   `<link rel="stylesheet" href="./styles/mainBotellas.css"><a id= "volver" onclick="`+(a==0 ? "categoria(0)" : "crear()")+`"><img src="img/volver.png"></a>
   <style> main{grid-template-columns: repeat(`+(a==0 ? botella[a][b].length : botella[a].length)+`,35%)}</style>
-  <header><p><img src="./img/logoGarufa.png"><stronge><img src="./img/flags/0`+( a > 5 ? 5 : a )+`.png"><br>`+(a==0 ? zac[b].name : menuC[a].name )+`</stronge></p></header>
+  <header><p><img src="./img/logoGarufa.png"><stronge><img src="./img/flags/0`+( a > 6 ? 6 : a )+`.png"><br>`+(a==0 ? zac[b].name : menuC[a].name )+`</stronge></p></header>
   <main id ="main">`;
   for(let i=0;i<(a==0 ?botella[a][b].length:botella[a].length);i++){
     if((a==0 ?botella[a][b][i].flag:botella[a][i].flag)==true){
